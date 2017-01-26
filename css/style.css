@@ -1,0 +1,262 @@
+/*author: Matheus Leite*/
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	/*removing the top margin from the page*/ 
+	margin: 0px;
+	background-color: #4E4E4E;
+}
+
+header {
+	/*adding a bacground image to the header, setting its width, 
+	border, positioning at the center and adding smooth edges to
+	the botton corners*/
+	background-image: url("../images/red-background.png");
+	width: 800px;
+	border: 1px solid red;
+	margin:auto;
+	border-radius: 0px 0px 5px 5px;
+}
+header img {
+	/*defining a fixed height for the image, positioning to the center 
+	of the header*/
+	height: 110px;
+	display: block;
+	margin: auto;
+}
+
+nav {
+	/* setting height, width, and posiitoning to the center*/
+	height: 55px;
+	width: 800px;
+	margin: auto;
+}
+
+nav ul {
+	/*removing the margin from the ul element*/
+	margin: auto;
+	padding: 0px;
+	text-align: center;
+}
+
+nav ul li{
+	/*disabling the list appearance of the li, and setting the top padding
+	and distance between each element (margin-left)*/
+	display: inline-block;
+	list-style-type: none;
+	padding-top: 19px;
+	margin-left: 2%;
+
+}
+
+nav ul li a {
+	/*changing the text color, the deocation and the font weight*/
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	/*underlining the text when hovered*/
+	text-decoration: underline;
+}
+
+/*changing the main width and positioning at the center of the page*/
+main {
+	width: 800px;
+	margin: auto;
+}
+
+main img#placeholder {
+	/*changing the size, position and adding shadow to the slides*/
+	width: 800px;
+	height: 400px;
+	display: block;
+	margin: auto;
+	box-shadow: 5px 5px 5px #323232;
+	border-radius: 0px;
+
+}
+
+main h1, h2, h3{
+	/*changing the visuals for the h1 and h2, and also 
+	aligning to the center*/
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+}
+
+main p, aside{
+	/*changing the color of the p element*/
+	color: #D1CFCF;
+
+	/*setting at 800px wide, with spacing between lines of 1.4 and
+	identing the first line of each paragraph*/
+	width: 800px;
+	margin: auto; 
+	text-indent: 1em;
+	line-height: 1.4;
+}
+
+/*changing the position and color of the li inside of the main*/
+main ul li {
+	color: #FFF;
+	text-align: left;
+}
+
+main img {
+	/*aligning the image, setting a fixed width and a border*/
+	display: block;
+	margin: 10px auto;
+	width: 400px;
+	border-radius: 50px;	
+}
+
+p#statement, blockquote {
+	/*giving a different style to the statement and the blockquote*/
+	text-align: right;
+	font-style: italic;
+	color: #FFF;
+	line-height: 1.4;
+}
+
+/*------------------------------- changing the anchor style and behavior*/
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #2B2B2B;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	font-weight: normal;
+}
+
+/*--------------------------------*/
+
+footer p{
+	/*alinging and changing the color for the footer*/
+	text-align: center;
+	color: #FFF;
+	/*clearing right because of the section styles*/
+	clear: right;
+
+}
+
+/*changing the padding for the paragraph in the selected sections*/
+section#introduction p, section#engine p, 
+section#interior p, section#car-body p{
+	padding-top: 10%;	
+}
+
+/*setting the width for the selected sections and the margin*/
+section#engine, section#car-body,
+section#introduction, section#interior {
+	margin:  auto;
+	width: 800px;
+}
+
+/*setting the width, border, and position for the images in the selected
+sections*/
+section#engine img, section#car-body img {
+	width: 300px;
+	border: 2px solid #2B2B2B;
+	border-radius: 30px;	
+	display: block;
+	padding-right: 0px;
+	float: right;
+	margin-left: 10px;
+	
+}
+
+section#engine h2, section#car-body h2 {
+	/*clearing left because of the last section*/
+	clear: left;
+	/*setting padding and text aligning*/
+	padding-top: 10%;
+	text-align: left;
+
+}
+
+section#introduction h2, section#interior h2 {
+	/*clearing right because of the last section*/
+	clear: right;
+	/*setting padding and text aligning*/
+	padding-top: 10%;
+	text-align: right;	
+}
+
+/*setting the width, border, and position for the images in the selected
+sections*/
+section#introduction img, section#interior img {
+	width: 300px;
+	border: 2px solid #2B2B2B;
+	border-radius: 30px;
+	display: block;
+	padding-left: 0px;
+	float: left;
+	margin-right: 10px;
+	
+}
+
+/*giving a standard style for the section*/
+section {
+	width: 800px;
+	margin: auto;
+	text-align: right;
+}
+
+/*setting a right margin for the anchors within a section*/
+section a {
+	margin-right: 40px;
+}
+
+
+iframe {
+	/*stting the border for the embed video*/
+	border: 0px;
+	border-radius: 5px;
+	/*centering the video to the page*/
+	display: block;
+	margin: auto;
+	/*setting width and height*/
+	width: 500px;
+	height: 250px;
+}
+
+/*changing the width, margin and color of the form*/
+form {
+	width: 800px;
+	margin: auto;
+	color: #FFF;
+}
+
+/*changing the alignment of the div button-holder*/
+.button-holder {
+	margin-top: 5px;
+	text-align: right;
+}
+
+/*changing the size, alignment and padding of the labels from the form */
+div label {
+	display: block;
+	width: 200px;
+	float: left;
+	text-align: right;
+	padding-right: 1em;
+}
+
+/*adding some style to the fieldset legent*/
+legend {
+	font-size: 80%;
+	text-transform: uppercase;
+	color: #2B2B2B;
+}
+
+/*changing the border and margin for the fieldset*/
+fieldset {
+	border: 1px solid #2B2B2B;
+	margin: 1em 0;
+}
